@@ -28,6 +28,12 @@ nav{
     display: flex;
     align-items: center;
     gap: 25px;
+    /* color: black; */
+}
+
+nav a:hover{
+    color: #5d16a0;
+    opacity: calc(50%);
 }
 
 
