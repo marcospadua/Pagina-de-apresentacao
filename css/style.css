@@ -28,7 +28,6 @@ nav{
     display: flex;
     align-items: center;
     gap: 25px;
-    /* color: black; */
 }
 
 nav a:hover{
@@ -61,17 +60,21 @@ nav a:hover{
     height: 100px;
  }
 
-#minha-foto{ 
+.about-me #minha-foto{ 
+    position: relative;
     display: flex;
+    bottom: 100px;
     margin-right: 50px;   
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 figcaption{
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    right: 20px;
+    bottom: 90px;
 }
 
 footer{    
