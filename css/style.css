@@ -8,25 +8,20 @@
 }
 
 body{   
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color:#343334;        
     color: #fff;
+    min-height: 100vh;
+    /* min-width: 100vh; */
+    
 }
 
-header{
+header, nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #222123;
     color: #5d16a0;
-    padding: 1em;
-}
-
-
-nav{
-    display: flex;
-    align-items: center;
+    padding: 3px;
     gap: 25px;
 }
 
@@ -38,14 +33,21 @@ nav a:hover{
 
 .about-me{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-top: 10rem;
-    margin-left: 2em;  
+    margin-left: 2em;
+    /* border: 3px solid red; */
+}
+
+.text{
+    position: relative;
+    right: 20px;
 }
 
 .techs{
-    display: flex;
+    position: relative;
+    right: 20px;
     flex-direction: column;
     margin-top: 183px;
     
@@ -60,13 +62,20 @@ nav a:hover{
     height: 100px;
  }
 
-.about-me #minha-foto{ 
+ .card-css{
+    display: flex;
+    position: relative;
+    bottom: 0.4em;
+    height: 112px;
+ }
+
+#minha-foto{ 
     position: relative;
     display: flex;
     bottom: 100px;
-    margin-right: 50px;   
-    height: 300px;
-    width: 300px;
+    margin-right: 10px;   
+    height: 400px;
+    width: 400px;
 }
 
 figcaption{
@@ -77,11 +86,11 @@ figcaption{
     bottom: 90px;
 }
 
-footer{    
+footer{
     display: flex;
     justify-content: center;    
     align-items: center;
-    margin-top: 9em;
+    margin-top: 9.5em;
     height: 3.5em;
     background-color: #222123;
 }
