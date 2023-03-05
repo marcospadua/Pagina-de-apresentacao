@@ -1,101 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 
-*{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{   
-    background-color:#343334;        
-    color: #fff;
-    min-height: 100vh;
-    /* min-width: 100vh; */
-    
+body {
+  background-color: #343334;
+  color: #fff;
+  min-height: 100vh;
 }
 
-header, nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222123;
-    color: #5d16a0;
-    padding: 3px;
-    gap: 25px;
+header,
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222123;
+  color: #5d16a0;
+  padding: 3px;
+  gap: 25px;
 }
 
-nav a:hover{
-    color: #5d16a0;
-    opacity: calc(50%);
+nav a:hover {
+  color: #5d16a0;
+  opacity: calc(50%);
 }
 
-
-.about-me{
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    margin-top: 10rem;
-    margin-left: 2em;
-    /* border: 3px solid red; */
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  margin-left: 2em;
 }
 
-.text{
-    position: relative;
-    right: 20px;
+.text {
+  position: relative;
+  right: 20px;
 }
 
-.techs{
-    position: relative;
-    right: 20px;
+.techs {
+  position: relative;
+  right: 20px;
+  flex-direction: column;
+  margin-top: 183px;
+}
+
+.cards-containers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.card {
+  display: flex;
+  margin: 0 10px 20px;
+  height: 100px;
+}
+
+.card-css {
+  display: flex;
+  position: relative;
+  bottom: 0.4em;
+  height: 112px;
+}
+
+#minha-foto {
+  position: relative;
+  display: flex;
+  /* bottom: 100px; */
+  margin-right: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+figcaption {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  right: 20px;
+  /* bottom: 90px; */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9.5em;
+  height: 3.5em;
+  background-color: #222123;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .about-me {
     flex-direction: column;
-    margin-top: 183px;
-    
-}
- .cards-containers{
-    display: flex;
-}
-
- .card{
-    display: flex;
-    margin-left: 45px;
-    height: 100px;
- }
-
- .card-css{
-    display: flex;
-    position: relative;
-    bottom: 0.4em;
-    height: 112px;
- }
-
-#minha-foto{ 
-    position: relative;
-    display: flex;
-    bottom: 100px;
-    margin-right: 10px;   
-    height: 400px;
-    width: 400px;
-}
-
-figcaption{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    right: 20px;
-    bottom: 90px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;    
     align-items: center;
-    margin-top: 9.5em;
-    height: 3.5em;
-    background-color: #222123;
+    margin-top: 5rem;
+  }
+
+  .text,
+  .techs {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+  }
+
+  #minha-foto {
+    height: 300px;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
- 
 
 
+@media (max-width: 576px) {
+  /* Adjustments for even smaller screens */
 
+  .about-me {
+    margin-top: 3rem;
+  }
 
+  .card {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
