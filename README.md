@@ -12,7 +12,7 @@
 <br /> 
 
 ### O projeto consiste em criar um código HTML para uma página simples de apresentação onde informo meus links para me encontrar e conto um pouco sobre mim e estilizar com CSS.
-Link da página: https://github.com/maarcosrx/Pagina-de-apresentacao
+Link da página: https://maarcosrx.github.io/Pagina-de-apresentacao/
 <br />
 <br />
 <br />
