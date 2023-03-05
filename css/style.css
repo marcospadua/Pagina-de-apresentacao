@@ -24,8 +24,19 @@ nav {
   gap: 25px;
 }
 
-nav a:hover {
+.fa-github {
   color: #5d16a0;
+}
+
+.fa-linkedin {
+  color: #5d16a0;
+}
+
+.fa-instagram {
+  color: #5d16a0;
+}
+
+nav a:hover {
   opacity: calc(50%);
 }
 
